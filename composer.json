@@ -1,0 +1,11 @@
+{
+    "name": "iutrds/tp5",
+    "autoload": {
+        "psr-4": {
+            "Iutrds\\Tp5\\": "app/"
+        }
+    },
+    "require": {
+      "ext-pdo": "*"
+    }
+}
