@@ -6,10 +6,10 @@ use Iutrds\Tp5\Exceptions\BddConnectException;
 
 class BddConnect {
   public \PDO $pdo;
-  protected string $host;
-  protected string $login;
-  protected string $password;
-  protected string $dbname;
+  protected ?string $host = null;
+  protected ?string $login= null;
+  protected ?string $password= null;
+  protected ?string $dbname= null;
 
   public function __construct() {
     // TODO : Configurer avec vos valeurs de connexions
