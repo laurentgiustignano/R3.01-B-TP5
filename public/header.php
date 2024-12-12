@@ -18,4 +18,4 @@
 <?php
 require_once '../app/Messages.php';
 
-messages::messageFlash();
+Messages::messageFlash();

@@ -32,7 +32,7 @@ $auth = new Authentification($trousseau);
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
   try {
     if(empty($_POST['email']) || empty($_POST['password']) || empty($_POST['repassword'])) {
-      throw new AuthenticationException("Accès interdit", "danger");
+      throw new AuthentificationException("Accès interdit", "danger");
     }
     $retour = $auth->register($_POST['email'], $_POST['password'], $_POST['repassword']);
     $message = "Vous êtes enregistré. Vous pouvez vous authentifier";
